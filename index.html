@@ -17,69 +17,7 @@
         background-color: #f2f2f2;
       }
 
-      header {
-        background-image: url("./background.jpg");
-        color: black;
-        padding: 20px;
-        text-align: center;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      h1 {
-        margin-top: 0;
-        font-size: 3em;
-        text-shadow: 2px 2px #fff;
-      }
-
-      nav {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-      }
-
-      nav a {
-        color: #fff;
-        margin: 0 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      @media screen and (max-width: 768px) {
-        header {
-          font-size: 24px;
-        }
-
-        nav {
-          flex-direction: column;
-        }
-
-        nav a {
-          margin: 10px 0;
-        }
-      }
     </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get all the links in the navigation
-        var navLinks = document.querySelectorAll("nav a");
-
-        // Add click event listeners to each link
-        navLinks.forEach(function (link) {
-          link.addEventListener("click", function () {
-            // Get the ID of the section to scroll to
-            var sectionId = this.getAttribute("href");
-
-            // Scroll to the section
-            document.querySelector(sectionId).scrollIntoView({
-              behavior: "smooth",
-            });
-          });
-        });
-      });
-    </script>
   </head>
   <body>
 
