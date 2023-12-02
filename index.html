@@ -119,22 +119,26 @@ Diabetes is a prevalent chronic condition with severe health implications global
       <h2 id="oad" style="text-align: center">Methodology</h2>
       <p style="text-align: center"></p>
 
-	<h4  style="text-align: center">Balancing Dataset</h4>
-	<p style="text-align: center">-Near Miss -Undersampling the majority class</p>
-	<h4  style="text-align: center">Selecting Relevant Features</h4>
-	<p style="text-align: center">- Correlations</p>
-	<p style="text-align: center">- Random Forest (Feature Importance)</p>
-	<p style="text-align: center">- Select K Best (16 Best Feature Scores)</p>
-	<p style="text-align: center">- Feature selection method – using chi squared</p>
-
-	<h4  style="text-align: center">Classification Algorithms Used</h4>
+	<h4  style="text-align: center">Exploratory Data Analysis</h4>
+	<p style="text-align: center">To explore the data and understand the features of our dataset, we developed visualizations to understand trends and gain further insight. Utilizing this methodology, we developed point plots, count plots, heat maps, box plots, violin plots, bar plots, and histograms. While exploring our data, we analyzed relationships between several features of our data such as smoking, alcohol consumption, heart disease, stroke, etc. Furthermore, we were able to understand age distributions, income distributions, and education distributions.</p>
+	
+	<h4  style="text-align: center">Addressing Imbalanced Data</h4>
+	<p style="text-align: center">To combat the imbalanced distribution within our dataset, we decided to use the Near Miss algorithm, an under-sampling technique.</p>
+	
+	<h4  style="text-align: center">Feature Selection</h4>
+	<p style="text-align: center">To select the most prominent features to build our classification models, we analyzed correlations in data to analyze the most highly correlated features. We developed a heat map to display these results and a bar chart showing the features in descending order. Secondly, we utilized random forest to find the most notable features and listed their scores. Lastly, we used Select K Best to find the most important feature scores and listed the features in ascending order by their respective scores. Furthermore, using Select K Best, we selected the top 16 features of the dataset based on their chi-squared scores to use in our classification models. Determining the optimal value of k for selecting the best features is essential to our model's ability to discern the most informative feature to enhance its predictability.
+	
+	<h4  style="text-align: center">Building Classification Models</h4>
       
-      <p style="text-align: center">• Decision Tree Classifier, K-Nearest Neighbors, Random Forest Classifier, Support Vector Machine, XGBoost, MLP Classifier, Artificial Neural Network, Ridge Classifier, Logistic Regression, Passive Aggressive Classifier</p>
-
-	<h4  style="text-align: center">Packages Used</h4>
+      <p style="text-align: center">We employed a classification model to leverage the power of machine learning in predicting diabetes to find patterns within the health indicators. To classify an individual as having diabetes or no diabetes based on the most salient features, we built 10 classification models. These models included KNN, Random Forest, Decision Tree, SVM, XGBoost, MLP Classifier, Ridge Classifier, Logistic Regression, Passive Aggressive Classifier, and an ANN.  
+	<h4  style="text-align: center">Packages Used</h4
       
       <p style="text-align: center">• pandas, numpy, matplotlib.pyplot, seaborn, tensorflow, sklearn, keras, xgboost</p>
 
+	<h4  style="text-align: center">Explainable AI (Artificial Intelligence) using SHAP Values </h4>
+      
+      <p style="text-align: center">To gain deeper insight into our features and their importance we utilized SHAP. SHAP refers to Shapley Additive Explanations which calculates a feature's impact on the target variable's value. By utilizing this methodology, we gained insight into which features were most important in predicting diabetes. SHAP values not only provided us with a quantitative measure of feature impact but also a comprehensive understanding of the direction and magnitude of each feature contribution.
+	    
       <h2 id="data" style="text-align: center">Code</h2>
 
       <p style="text-align: center">
