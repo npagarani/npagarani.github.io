@@ -1,7 +1,233 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <title>Capstone project</title>
+    <style>
+      footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-image: url("./background.jpg");
+        color: black;
+        padding: 20px;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 3em;
+        text-shadow: 2px 2px #fff;
+      }
+
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      @media screen and (max-width: 768px) {
+        header {
+          font-size: 24px;
+        }
+
+        nav {
+          flex-direction: column;
+        }
+
+        nav a {
+          margin: 10px 0;
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all the links in the navigation
+        var navLinks = document.querySelectorAll("nav a");
+
+        // Add click event listeners to each link
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            // Get the ID of the section to scroll to
+            var sectionId = this.getAttribute("href");
+
+            // Scroll to the section
+            document.querySelector(sectionId).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="#ab">Abstract</a>
+      <a href="#in">Intro</a>
+      <a href="#oad">Objective</a>
+      <a href="#data">Dataset</a>
+      <a href="#met">Methodology</a>
+      <a href="#imp">Implementation</a>
+      <a href="#res">Results</a>
+    </nav>
+
+    <header>
+      <h1>
+        Discovering Novel Biomarkers for Cervical and Endometrioid Cancers Using
+	Feature Importance of Classification Algorithms
+      </h1>
+      <h3>Advisor: Dr. Giri Narasimhan</h3>
+      <h3>Mentor: Dr. Ananda Mondal</h3>
+    </header>
+
+    <section>
+      <h2 id="ab" style="text-align: center">Abstract</h2>
+      <p style="text-align: center">
+        INSERT ABSTRACT HERE
+      </p>
+
+      <h2 id="in" style="text-align: center">Introduction</h2>
+      <p style="text-align: center">
+        INSERT INTRO HERE
+      </p>
+
+      <h2 id="oad" style="text-align: center">Objective</h2>
+      <p style="text-align: center"></p>
+
+      <p style="text-align: center">
+        PACKAGES USED
+      </p>
+      
+      <p style="text-align: center">• pandas</p>
+      <p style="text-align: center">• numpy</p>
+      <p style="text-align: center">• matplotlib.pyplot</p>
+      <p style="text-align: center">• seaborn</p>
+      <p style="text-align: center">• tensorflow</p>
+      <p style="text-align: center">• tensorflow.keras.layers</p>
+      <p style="text-align: center">• tensorflow.keras.models</p>
+      <p style="text-align: center">• scikit learn</p>
+
+      <p style="text-align: center">
+        EXPLAIN THAT EXCEL AND POWERPOINT WERE ALSO USED
+      </p>
+      <h2 id="data" style="text-align: center">Code</h2>
+
+      <p style="text-align: center">
+        <a
+          href="https://github.com/gaf17"
+          >https://github.com/gaf17</a
+        >
+      </p>
+
+      <h2 id="data" style="text-align: center">Dataset</h2>
+      <p style="text-align: center">
+		insert dataset source and snippet here
+      </p>
+
+      
+
+      <h2 id="met" style="text-align: center">Methodology</h2>
+      <p style="text-align: center">
+        <p  style="text-align: center"><b>Data Pre-processing:</b> Boruta Feature Selection Algorithm & Normalization of Data</p>
+		<p  style="text-align: center"><b>. Machine Learning Analysis:</b> Autoencoder Model (Artificial Neural Network with unsupervised learning of Latent Representation’s).</p>
+      </p>
+
+      <h2 id="imp" style="text-align: center">Implementation</h2>
+      <p style="text-align: center">
+        insert implementation
+      </p>
+	  <h4  style="text-align: center">A. Boruta Feature selection Algorithm:</h4>
+      <p style="text-align: center">
+        asdfasfasdfas
+      </p>
+	  <h4  style="text-align: center">B. Normalization:</h4>
+      <p style="text-align: center">
+       asdfadsfasdfasd
+	      <br><b>Equation:</b>
+<p>
+	<p  style="text-align: center">Z = (x-mean)/ (standard deviation).</p>
+
+<p  style="text-align: center">• Z is the data point's Normalized value.</p>
+<p  style="text-align: center">• x = the original value of the data point</p>
+<p  style="text-align: center">• mean = the mean of the dataset</p>
+<p  style="text-align: center">• standard deviation = the standard deviation of
+the dataset.</p>
+</p>
+      </p>
+	  
+	  <h4  style="text-align: center">C. Merging of Datasets:</h4>
+      <p style="text-align: center">
+        merge asfasfasdf
+      </p>
+	  <h4  style="text-align: center">D. Machine Learning Analysis:</h4>
+      <p style="text-align: center">
+        asdfasdf
+	      <br>
+
+Flow Chart of project:
+      </p>
+	  <div style="display: flex; justify-content: center;"><img src="imp.jpg" alt="#img"/></div>
+	  
+      
+
+      <h2 id="res" style="text-align: center">Results</h2>
+      <p style="text-align: center">
+        asdfasdf
+      </p>
+
+      <p style="text-align: center">
+        <img src="res1.png"alt="res 1" />
+      </p>
+      <p style="text-align: center">asdfasdf</p>
+      <p style="text-align: center">
+        <img src="res2.png" width="800"  alt="res2" />
+      </p>
+      <p style="text-align: center">asdfadsf
+      </p>
+      <p style="text-align: center">
+        <img src="res3.png" width="800"  alt="res3" />
+      </p>
+
+     
+
+      <h2 id="res" style="text-align: center">Conclusions</h2>
+      <p style="text-align: center">
+       conclusion
+      </p>
+    </section>
+
+    <footer>
+      <p style="text-align: center">Contributed by</p>
+      <p style="text-align: center">
+        <b>Genevieve Ferguson</b>
+      </p>
+	  <p>Master's Student in Data Science and AI
+		gferg020@fiu.edu
+		</p>
+      <p style="text-align: center">IDC 6940: Capstone Project</p>
+      <p style="text-align: center">MS in Data Science</p>
+      <p style="text-align: center">Florida International University</p>
+    </footer>
+  </body>
 </html>
