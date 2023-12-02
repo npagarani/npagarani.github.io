@@ -82,20 +82,12 @@
     </script>
   </head>
   <body>
-    <nav>
-      <a href="#ab">Abstract</a>
-      <a href="#in">Intro</a>
-      <a href="#oad">Objective</a>
-      <a href="#data">Dataset</a>
-      <a href="#met">Methodology</a>
-      <a href="#imp">Implementation</a>
-      <a href="#res">Results</a>
-    </nav>
 
     <header>
       <h1>
         Insight into Health Indicators for Diabetes
       </h1>
+      <h3>Group Members: Genevieve Ferguson, Nitin Pagarani, & Cristian Biondi</h3>
       <h3>Mentor: Dr. Giri Narasimhan</h3>
     </header>
 
@@ -112,33 +104,10 @@ Diabetes is a prevalent chronic condition with severe health implications global
       </p>
 
 	<p style="text-align: left">
-		Considering the severity of the disease, its risk factors, and its widespread impact on individuals globally, our goal is to leverage accessible data and its relevant features to predict diabetes. For our research project, we will be utilizing data analytical tools to explore diabetes data, identify correlated features, and develop classification models to predict diabetes. Secondly, we will identify the most notable features or health indicators of the dataset. Thirdly, we will analyze diabetes data by state and city to understand the prevalence of diabetes across different cities of the United States. Lastly, we will be making recommendations to reduce the risk of developing diabetes. Our inspiration and motivation for this project include the fact that diabetes causes many health complications and its prevalence across the world is significant. We believe that by studying and analyzing features of our dataset we can make data driven recommendations to reduce the risk of diabetes among individuals. Understanding diabetes and its impact is crucial for developing a long and healthy life. Furthermore, individuals can alter their lifestyles to better manage their health and prevent the risk of diabetes.  
+		Considering the severity diabetes, its risk factors, and its widespread impact on individuals globally, our goal is to leverage accessible data and its relevant features to predict diabetes. For our research project, we will be utilizing data analytical tools to explore diabetes data, identify correlated features, and develop classification models to predict diabetes. Secondly, we will identify the most notable features or health indicators of the dataset. Thirdly, we will analyze diabetes data by state and city to understand the prevalence of diabetes across different cities of the United States. Lastly, we will be making recommendations to reduce the risk of developing diabetes. Our inspiration and motivation for this project include the fact that diabetes causes many health complications and its prevalence across the world is significant. We believe that by studying and analyzing features of our dataset we can make data driven recommendations to reduce the risk of diabetes among individuals. Understanding diabetes and its impact is crucial for developing a long and healthy life. Furthermore, individuals can alter their lifestyles to better manage their health and prevent the risk of diabetes.  
       </p>
 	    
-
-      <h2 id="oad" style="text-align: center">Methodology</h2>
-      <p style="text-align: center"></p>
-
-	<h4  style="text-align: center">Exploratory Data Analysis</h4>
-	<p style="text-align: center">To explore the data and understand the features of our dataset, we developed visualizations to understand trends and gain further insight. Utilizing this methodology, we developed point plots, count plots, heat maps, box plots, violin plots, bar plots, and histograms. While exploring our data, we analyzed relationships between several features of our data such as smoking, alcohol consumption, heart disease, stroke, etc. Furthermore, we were able to understand age distributions, income distributions, and education distributions.</p>
-	
-	<h4  style="text-align: center">Addressing Imbalanced Data</h4>
-	<p style="text-align: center">To combat the imbalanced distribution within our dataset, we decided to use the Near Miss algorithm, an under-sampling technique.</p>
-	
-	<h4  style="text-align: center">Feature Selection</h4>
-	<p style="text-align: center">To select the most prominent features to build our classification models, we analyzed correlations in data to analyze the most highly correlated features. We developed a heat map to display these results and a bar chart showing the features in descending order. Secondly, we utilized random forest to find the most notable features and listed their scores. Lastly, we used Select K Best to find the most important feature scores and listed the features in ascending order by their respective scores. Furthermore, using Select K Best, we selected the top 16 features of the dataset based on their chi-squared scores to use in our classification models. Determining the optimal value of k for selecting the best features is essential to our model's ability to discern the most informative feature to enhance its predictability.
-	
-	<h4  style="text-align: center">Building Classification Models</h4>
-      
-      <p style="text-align: center">We employed a classification model to leverage the power of machine learning in predicting diabetes to find patterns within the health indicators. To classify an individual as having diabetes or no diabetes based on the most salient features, we built 10 classification models. These models included KNN, Random Forest, Decision Tree, SVM, XGBoost, MLP Classifier, Ridge Classifier, Logistic Regression, Passive Aggressive Classifier, and an ANN.  
-	<h4  style="text-align: center">Packages Used</h4
-      
-      <p style="text-align: center">pandas, numpy, matplotlib.pyplot, seaborn, tensorflow, sklearn, keras, xgboost</p>
-
-	<h4  style="text-align: center">Explainable AI (Artificial Intelligence) using SHAP Values </h4>
-      
-      <p style="text-align: center">To gain deeper insight into our features and their importance we utilized SHAP. SHAP refers to Shapley Additive Explanations which calculates a feature's impact on the target variable's value. By utilizing this methodology, we gained insight into which features were most important in predicting diabetes. SHAP values not only provided us with a quantitative measure of feature impact but also a comprehensive understanding of the direction and magnitude of each feature contribution.
-	    
+    
       <h2 id="data" style="text-align: center">Code</h2>
 
       <p style="text-align: center">
@@ -147,40 +116,12 @@ Diabetes is a prevalent chronic condition with severe health implications global
           >https://github.com/npagarani</a
         >
       </p>
-
-      <h2 id="data" style="text-align: center">Dataset</h2>
-
-	<h4  style="text-align: center">Diabetes Health Indicators</h4>
-	      
-	<p style="text-align: center">The Diabetes Health Indicators dataset was retrieved directly from the UCI Machine Learning repository. The dataset has a size of 253,680 x 22. The features of the dataset include Diabetes_binary, Age, Income, Smoker, Education, Sex, High BP, Stroke, Fruits, Veggies, Physical Activity, Mental Health, etc. Furthermore, 128,715 females and 100,759 males participated in this survey. Participants were aged 18-75 and had varying ranges of income levels from 10,000-75,000+.  
-      </p>
-      <p style="text-align: center">
-        <a
-          href="https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators"
-          >Link: https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators</a
-        >
-	</p>
       
 
       <h2 id="res" style="text-align: center">Results</h2>
       <p style="text-align: center">
         asdfasdf
       </p>
-
-      <p style="text-align: center">
-        <img src="res1.png"alt="res 1" />
-      </p>
-      <p style="text-align: center">asdfasdf</p>
-      <p style="text-align: center">
-        <img src="res2.png" width="800"  alt="res2" />
-      </p>
-      <p style="text-align: center">asdfadsf
-      </p>
-      <p style="text-align: center">
-        <img src="res3.png" width="800"  alt="res3" />
-      </p>
-
-     
 
       <h2 id="res" style="text-align: center">Conclusions</h2>
       <p style="text-align: center">
